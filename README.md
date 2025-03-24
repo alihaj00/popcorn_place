@@ -2,7 +2,7 @@
 
 Popcorn Palace is a web application for managing movies, showtimes, and ticket bookings. Built with Spring Boot and JPA/Hibernate, the application provides a robust REST API with comprehensive validation and testing.
 
-> 📄 **Note:** To install and run the application, please refer to [instructions.md](instructions.md).
+> 📄 **Note:** To install and run the application, please refer to [instructions.md]([instructions.md](https://github.com/alihaj00/popcorn_place/blob/main/Instructions.md)).
 
 ## API Endpoints
 
