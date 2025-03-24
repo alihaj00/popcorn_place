@@ -50,9 +50,16 @@ public class MovieController {
      * @return A ResponseEntity containing the saved movie.
      */
     @PostMapping
-    public ResponseEntity<Movie> addMovie(@Valid @RequestBody Movie movie) {
+    public ResponseEntity<?> addMovie(@Valid @RequestBody Movie movie) {
         // Save the new movie to the database.
+        Optional<Movie> movieOpt = movieRepository.findByTitle(movie.getTitle());
+        if (movieOpt.isPresent()) {
+            return ResponseEntity.badRequest()
+                    .body("movie with title " + movie.getTitle() + " already exists");
+
+        }
         Movie savedMovie = movieRepository.save(movie);
+
         System.out.println("Saved movie: " + savedMovie);
         return ResponseEntity.ok(savedMovie);
     }
