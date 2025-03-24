@@ -51,7 +51,7 @@ public class ShowtimeController {
             }
         }
 
-        // Create and populate a new Showtime instance
+        // Create and populate a new Showtime instance once there is no obstacle to create new one
         Showtime showtime = new Showtime();
         showtime.setMovie(movieOpt.get());
         showtime.setPrice(request.getPrice());
