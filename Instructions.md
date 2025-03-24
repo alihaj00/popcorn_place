@@ -8,10 +8,17 @@ Popcorn Palace is a web application for managing movies, showtimes, and ticket b
 
 Before you begin, ensure you have the following installed:
 1. **Java Development Kit (JDK):** Version 11 or later.  
-   **Note:** This project was built using Amazon Corretto 21.0.6, located at `C:\Users\aliha\.jdks\corretto-21.0.6\bin\java.exe`.
+   **Note:** This project was built using Amazon Corretto 21.0.6, located .
 2. **Maven Wrapper:** The project includes the Maven wrapper (`mvnw`), so you don't need to install Maven separately.
 3. **Docker:** To run the application in a containerized environment.  
-   **Important:** Ensure Docker Desktop is installed and running before proceeding.
+   **Important:** Ensure Docker Desktop is installed and running before proceeding.(https://docs.docker.com/desktop/setup/install/windows-install/)
+4. **Postman:** Use Postman  to easily send requests and test your APIs .(https://www.postman.com/downloads/)
+
+
+
+
+
+
 
 ## 3. Setup
 
